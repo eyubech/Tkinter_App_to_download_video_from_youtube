@@ -10,7 +10,7 @@ def url():
     lien = lien_var.get()
     youtube = pytube.YouTube(lien)
     video = youtube.streams.first()
-    #video loaction
+    #video location
     video.download('/home/ayoub/')
     lien_var.set("")
     tk.messagebox.showinfo(title='Download', message='Done', )
